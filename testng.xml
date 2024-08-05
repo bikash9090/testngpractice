@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+	<parameter name="browser" value="chrome" />
+	<parameter name="url" value="file://D:/DEMO-PAGES/home.html" />
+
+	<listeners>
+		<listener class-name="listeners.ClassListeners"></listener>
+	</listeners>
+	<test name="Test1">
+
+		<classes>
+			<class name="testngpractice.Class1" > 
+				<methods>
+					<include name="class1Method2"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>	<!--
+	Test -->
+</suite> <!--
+Suite -->
